@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      background: rgb(77,150,255);
+      background: linear-gradient(0deg, rgba(77,150,255,0.6) 0%, rgba(107,203,119,0.6) 34%, rgba(255,217,61,0.6) 66%, rgba(255,107,107,0.6) 100%);
+      text-align: center;
+    }
+    #test {
+      width: 1480px;
+      height: 890px;
+      background-image: url('ISPY2.jpg');
+      border: 5px solid black;
+      margin: auto;
+    }
+  </style>
+  <h1 style="font-family: 'Climate Crisis', cursive; font-size: 100px;">I Spy</h1>
+  <script>
+    function trackClick(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      document.getElementById("coord").innerHTML = "X,Y: " + x + ", " + y;
+      console.log("mamamo");
+    }
+    function clearstuff(){
+      document.getElementById("coord").innerHTML = "X,Y: ";
+    }
+    function gotit(event){
+      var x = event.clientX;
+      var y = event.clientY;
+      if(x>155 && x<220 && y>215 && y<326){
+          alert("BANANNANANSNJASKHSJAHKSJAHS");
+          document.getElementById("item1").style.color = "green";
+      }
+        
+      else if(x>700 && x<763 && y>19 && y<56){
+          alert("Wow ang galing mo! I'm a huge FAN! (haha di funny)");
+          document.getElementById("item2").style.color = "green";
+      }
+      else if(x>1150 && x<1196 && y>495 && y<542){
+          alert("bola bola lmao");
+          document.getElementById("item3").style.color = "green";
+      }
+      else if(x>300 && x<344 && y>770 && y<819){
+          alert("Now nagets mo. congrats");
+          document.getElementById("item4").style.color = "green";
+      }
+      else if(x>975 && x<1033 && y>806 && y<852){
+          alert("fruity daw kasi");
+          document.getElementById("item5").style.color = "green";
+      }
+      else if(x>257 && x<294 && y>552 && y<593){
+          alert("sanaol telephone... kasi tinatawag nya");
+          document.getElementById("item6").style.color = "green";
+      }
+      else if(x>438 && x<453 && y>636 && y<649){
+          alert("wow congrats nahanap mo pagmamahal nya (hindi nya ako mahal)");
+          document.getElementById("item7").style.color = "green";
+      }
+      else if(x>402 && x<475 && y>795 && y<835){
+          alert("oo geeraff");
+          document.getElementById("item8").style.color = "green";
+      }
+      else if(x>1256 && x<1280 && y>101 && y<129){
+          alert("draogn fly... DRAGON DEEZ--");
+          document.getElementById("item9").style.color = "green";
+      }
+      else if(x>347 && x<398 && y>333 && y<366){
+          alert("strobbery");
+          document.getElementById("item10").style.color = "green";
+      }
+      else if(x>69 && x<69 && y>69 && y<69){
+          alert("there is no car. get trolled");
+          document.getElementById("item11").style.color = "green";
+      }
+      else if(x>420 && x<420 && y>420 && y<420){
+          alert("strobbery");
+          document.getElementById("item10").style.color = "green";
+      }
+      else{
+          alert("skill issue");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="test" onClick="gotit(event)" onmousemove="trackClick(event)" onmouseout="clearstuff()"></div>
+  <p id="coord">X,Y: </p>
+  <p><b>Reminder: Scroll all the way up before clicking!</b></p>
+  <ul id="listOfItems">
+    <li id="item1">Banana</li>
+    <li id="item2">Blue fan</li>
+    <li id="item3">Baseball</li>
+    <li id="item4">6, 5, 3</li>
+    <li id="item5">Grapes</li>
+    <li id="item6">Telephone</li>
+    <li id="item7">pagmamahal nya "<3"</li>
+    <li id="item8">Giraffe</li>
+    <li id="item9">Dragonfly</li>
+    <li id="item10">Strawberry</li>
+    <li id="item11">car</li>
+  </ul>
+
+</body>
+</html>
